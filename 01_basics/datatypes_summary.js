@@ -34,3 +34,23 @@ const heros = ["Superman","Ironman","spiderman"] //arrays
     console.log(typeof outsidetemp);
     console.log(typeof myfunction);
     console.log(typeof id);
+
+
+//********** */
+    // stack(primitive),heap(non-primitive)
+
+    let myyoutubename = "nish02"
+    let anothername = myyoutubename
+    anothername = "jagrati02"
+    console.log(anothername);
+    
+let userOne = {
+      email: "user@google.com",
+     upi: "user@ybl"
+}
+let usertwo = userOne
+usertwo.email = "jagrati@google.com"
+console.log(userOne.email);
+console.log(usertwo.email);
+
+
