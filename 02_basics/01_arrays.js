@@ -24,3 +24,18 @@ console.log(myArray2.email);
 // console.log(myArray2.name);   // doubt
 
 
+const myArrayA= [1,2,3,4,5]
+const mycartoons = ["doremon","shinchan","ninjahatori"]
+const myarrayB = new Array(0,1,2,3)
+console.log(myArrayA[0]);
+
+
+// array methods
+
+myArrayA.push(6)
+console.log(myArrayA); // now this value is pushed in arrayA
+
+myArrayA.pop() // pop remove the last element 
+
+myarrayB.unshift(8) // unshift add the value "8" which is inside bracket at first
+
