@@ -70,7 +70,7 @@ console.log(myn1);
 
 const myn2 = myArrayA.splice(1,4)
 console.log(myn2);
-console.log(myArrayA); // splice manupulates the orignal array
+console.log(myArrayA);  // splice manupulates the orignal array
 
 
 
