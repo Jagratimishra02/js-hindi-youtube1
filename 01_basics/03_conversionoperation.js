@@ -1,8 +1,11 @@
-let score = "123"
+
+
+let score ="1234"
+console.log(score);
+
 
 // const {score}=req.body
 
-console.log(typeof score);
 //  console.log(typeof (score));
 // both above statement r same of console log score 
 
@@ -62,8 +65,10 @@ let str3 = str1+str2
  console.log(1+"2"); //result is 12
  console.log(1+2+"3"); //result is 33
 
-console.log(+true); // result is 1 true is converted because of increment.whereas this gives error .
-// console.log(true+);
+console.log(+true); // result is 1 true is converted because of increment.
+
+// whereas this gives error 
+//  console.log(true+);
 
 
 console.log(+"");//empty strings gives false + increment converts so result is 0 
@@ -73,6 +78,20 @@ console.log(+"");//empty strings gives false + increment converts so result is 0
 let gamecounter = 100 
 gamecounter++   //++ it increments by 1 this is post fix . ++gamecounter is prefix, both r different 
 console.log(gamecounter);
- 
- 
- 
+  
+let score1 = "jagrati"
+console.log(score1);
+console.log(typeof score1);
+let new_score1 = Number(score1)
+console.log(new_score1);
+
+// string when converts in number gives NaN value
+
+
+
+
+let score2 = "123456"
+console.log(score2);
+console.log(typeof score2);
+let new_score2 = Number(score2) // it converts output into number
+console.log(new_score2);

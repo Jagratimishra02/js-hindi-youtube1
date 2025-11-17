@@ -9,8 +9,7 @@ let name = "Jagrati"
 let age =21
 let isloggenIn =false 
 
-//  number=> 2 to power 53
-// bigint
+//  number=> 2 to power 53, bigint
 // string => ""
 // boolean => true/false 
 // null => standalone value
