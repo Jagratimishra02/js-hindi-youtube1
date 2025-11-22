@@ -28,9 +28,18 @@ console.log(typeof jsUser[mySym]); // this gives the value inside mysym which is
 console.log(typeof mySym);// type is symbol
 
 jsUser.email = "jago@google.com" // object is freeze 
-Object.freeze(jsUser)
- jsUser.email = "jagrati@microsoft.com"  // email will not change bcoz it is freezed
+// Object.freeze(jsUser)
+ //jsUser.email = "jagrati@microsoft.com"  // email will not change bcoz it is freezed
 console.log(jsUser);
 
+jsUser.greeting = function() {
+     console.log("hello js user");   
+}
+// console.log(jsUser.greeting); // undefined
 
-
+console.log(jsUser.greeting());
+console.log(jsUser.greeting); // function (anonymous) // function is not executed it just take refrence 
+jsUser.greetingTwo = function() {
+  console.log(`hello js user,${this.name}`); // it takes the refrence from js user
+}
+console.log(jsUser.greetingTwo());
