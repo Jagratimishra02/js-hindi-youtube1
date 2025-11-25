@@ -71,3 +71,22 @@ console.log(coursename);
  const{courseinstructer:instructer} = course
  console.log(instructer);
 
+ // imp react concept****
+const navbar = ({company}) => {
+console.log(company);
+}
+
+//******++++++++json concept +++++++++++ */
+// 
+//  {
+//     "name":"jagrati",
+//     "coursename":"french in english"
+//     "price": "free"
+//  }
+
+//++++++++++++++++++++++++++++++++++
+//  [
+//     {}
+//     {}
+//     {}
+//  ]
