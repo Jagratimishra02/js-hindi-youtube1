@@ -38,4 +38,54 @@ sayMyname()
   const result = addTwoNumbers(3,5) 
  console.log("result:", result);
   
+ function loginusermessage(username) {
+  return `${username}justlogged in`
+ }
+ console.log(loginusermessage("jagrati"));
+
+// result :- jagrati just logged in
+
+
+
+function loginusermessage(username) {
+  return `${username}justlogged in`
+ }
+ console.log(loginusermessage("")); // result will be :- just logged in
+ console.log(loginusermessage()); // undefined just logged in
+
+
+ // ++++++++ to check username is defined or not +++++//
+ 
   
+ function loginusernotification(username) {
+  if (username === undefined) {
+  console.log("please enter the username");
+   return
+  }
+  return `${username}justlogged in`
+ }
+ console.log(loginusernotification());
+
+
+ //###############
+
+ function loginuserpopup(username) {
+   if (!undefined) {
+    console.log("please give values");
+    return
+  }
+  return `${username}justlogged in`
+ }
+ console.log(loginuserpopup());
+
+
+
+ function loginpopup(username = "nishu") {
+   if (!undefined) {
+    console.log("please give values");
+    return
+  }
+  return `${username}justlogged in`
+ }
+ console.log(loginpopup());
+  console.log(loginpopup("jago")); //automatic jago will be overwrite automatically
