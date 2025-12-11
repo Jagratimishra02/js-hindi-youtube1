@@ -48,4 +48,13 @@ const balance = 1000
     console.log(" balance is greater than or equal to 1000");      // result will be less than or equal to 1200
  }
 
- 
+ const UserloggedIn = true
+ const debitcard = true
+ const loggedInFromGoogle = false
+ const loggedInFromEmail = true
+ if (UserloggedIn && debitcard && 2==2) {                    // to check all condition use &&
+  console.log("allow to buy courses");
+ } 
+if (loggedInFromGoogle || loggedInFromEmail) {      // to execute even if one of the value is true 
+console.log("user logged in");
+ }
