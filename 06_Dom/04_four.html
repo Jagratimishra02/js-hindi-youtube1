@@ -5,10 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dom with nishi</title>
 </head>
-<body>
+<body style="background-color: #212121 ; color: #ffff ;">
     <ul class="language">
         <li>javascript</li>
     </ul>
 
 </body>
+<script>
+    function addlanguage(langName){
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addlanguage('python')
+    addlanguage('Typescript')
+
+    function addOptilanguage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptilanguage('golang')
+
+    // Edit
+      const secondLang = document.querySelector('li:nth-child(2)')
+      console.log(secondLang);
+      
+// secondLang.innerHTML = 'mojo'
+      const NewLi =  document.createElement('li')
+      NewLi.textContent = "mojo"
+      secondLang.replaceWith(NewLi)
+
+  //edit
+  const FirstLang = document.querySelector('li:first-child')
+ FirstLang.outerHTML = '<li>Typescript</li>'
+    
+   //remove
+   const lastLang = document.querySelector('li:last-child')
+   lastLang.remove()
+
+</script>
 </html>
