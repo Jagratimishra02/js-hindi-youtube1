@@ -48,7 +48,7 @@ document.getElementById("images").addEventListener('click',function(e){
 
 document.getElementById('owl').addEventListener('click',function(e){
   console.log("owl clicked");
-//   e.stopPropagation()
+  // e.stopPropagation()
 },false)
 
 document.getElementById('google').addEventListener('click',function(e){
@@ -57,12 +57,19 @@ console.log('google clicked');
 e.stopPropagation()
 },false )
 
-//***************** EVENT DELIGATION ****************************
+//***************** EVENT DELIGATION / event spillOver****************************
     document.querySelector('#images').addEventListener( 'click' , function (e) {
-   console.log(e.target.parentNode);
-  let removeIt = e.target.parentNode.parentNode
+   console.log(e.target.tagName);
+   
+  
+
+if (e.target.tagName === 'IMG') {
+  console.log(e.target.id);
+  let removeIt = e.target.parentNode
   //  removeIt.remove()
-  removeIt.parentNode.parentNode(removeIt)
+  removeIt.parentNode.removeChild(removeIt)
+}
+
 
     })
  // IMG is wrapped inside a list item nd removing the parent element ensures the entire list element is deleted instead of leaving an empty container . thats we have not used this 'let removeIt = e.target.remove()'
