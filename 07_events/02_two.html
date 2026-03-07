@@ -20,9 +20,20 @@
     const sayjagrati = function(){
         console.log("jagrati");
     }
+    setTimeout(sayjagrati,2000)
+const changetext = function(){
+   document.querySelector('h1').innerHTML= "series completed"
+  
+}
+    // setTimeout(changetext,2000)
+ const changeMe = setTimeout(changetext,2000)
 
-    document.querySelector('h1').innerHTML= "series completed"
- setTimeout(sayjagrati,2000)
+ document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeMe)
+    console.log('stopped');
+    
+ })
+
 
 </script>
 </html>
