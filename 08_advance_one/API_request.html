@@ -13,20 +13,45 @@
  3	LOADING	Downloading; responseText holds partial data.
  4	DONE	The operation is complete.
 
+<button id="loadData">show User followers/image</button>
+
+<div id="card" style="border:1px solid black; width:250px; padding:10px; margin-top:20px;">
+    <img id="avatar" width="200">
+    <h3 id="followers"></h3>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 
 <script> 
-   const requestUrl = 'https://api.github.com/users/jagratimishra02'
+   const btn = document.getElementById("loadData")
+   btn.style.backgroundColor = "pink"
+   btn.style.color = "white"
+   btn.style.padding = "10px 20px"
+   btn.style.border = "none"
+   btn.style.borderRadius = "8px"
+   btn.style.curser = "pointer"
+   
+   const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+   document.getElementById("loadData").addEventListener("click", function(){
    const XHR = new XMLHttpRequest();
    XHR.open('get',requestUrl)
      XHR.onreadystatechange = function(){
      console.log(XHR.readyState);   
      if (XHR.readyState === 4){
-         console.log(this.responseText);
+    const data = JSON.parse(this.responseText)
+         console.log(typeof data);
+         console.log(data.followers);
+         
+         document.getElementById("avatar").src = data.avatar_url
+        document.getElementById("followers").innerText = 
+        "Followers : " + data.followers
         }
      
      }
    
-   XHR.send()
+   XHR.send()})
 </script>
 </html>
+   
