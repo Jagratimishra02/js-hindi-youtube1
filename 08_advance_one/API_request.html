@@ -16,6 +16,17 @@
 </body>
 
 <script> 
-    Const requestUrl = ''
+   const requestUrl = 'https://api.github.com/users/jagratimishra02'
+   const XHR = new XMLHttpRequest();
+   XHR.open('get',requestUrl)
+     XHR.onreadystatechange = function(){
+     console.log(XHR.readyState);   
+     if (XHR.readyState === 4){
+         console.log(this.responseText);
+        }
+     
+     }
+   
+   XHR.send()
 </script>
 </html>
