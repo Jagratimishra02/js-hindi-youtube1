@@ -11,11 +11,22 @@ const user = {
 }
  console.log(user.username);
  console.log(user.getuserdetails()); // it is function so callback needed
- console.log(this);
+ console.log(this); // {}= output
 
+
+ // new is constructer function  
  const promiseOne = new promise ()
- const date = new date () 
+ const date = new date ()  
+            
+ function user2(username , loginCount , isloggedIn){
+    this.username = username;
+    this.loginCount = loginCount;
+    this.isloggedIn = isloggedIn;
+    return this
+ }
 
+ const userOne = user("krpansh" , 12 , true)
+console.log(userOne);
 
 
  
