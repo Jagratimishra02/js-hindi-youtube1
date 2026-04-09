@@ -15,8 +15,8 @@ const user = {
 
 
  // new is constructer function  
- const promiseOne = new promise ()
- const date = new date ()  
+//  const promiseOne = new promise ()
+//  const date = new date ()  
             
  function user2(username , loginCount , isloggedIn){
     this.username = username;
@@ -25,8 +25,10 @@ const user = {
     return this
  }
 
- const userOne = user("krpansh" , 12 , true)
-console.log(userOne);
+ const userOne = new user2("krapansh" , 12 , true)
+ const userTwo = new user2("jagrati" , 2 , true)
+console.log(userOne.constructer);
+
 
 
  
