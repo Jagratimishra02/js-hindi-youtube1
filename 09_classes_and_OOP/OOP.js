@@ -27,7 +27,7 @@ const user = {
 
  const userOne = new user2("krapansh" , 12 , true)
  const userTwo = new user2("jagrati" , 2 , true)
-console.log(userOne.constructer);
+console.log(userOne.constructor);
 
 
 
