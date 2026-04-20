@@ -10,8 +10,8 @@ const user = {
     }
 }
  console.log(user.username);
- console.log(user.getuserdetails()); // it is function so callback needed
- console.log(this); // {}= output
+//  console.log(user.getuserdetails()); // it is function so callback needed
+//  console.log(this); // {}= output
 
 
  // new is constructer function  
@@ -27,7 +27,11 @@ const user = {
 
  const userOne = new user2("krapansh" , 12 , true)
  const userTwo = new user2("jagrati" , 2 , true)
-console.log(userOne.constructor);
+console.log(userOne);
+console.log(userOne.constructor); // [function: user2] it gives its refrence
+console.log(userTwo);
+console.log(userOne instanceof user2); // gives instance "check"
+
 
 
 
