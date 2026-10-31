@@ -27,7 +27,7 @@ let myArraydemo_1 = [name= "jagrati",
 let myArraydemo_2 = myArraydemo_1
   myArraydemo_2.name = "nishi"
 console.log(myArraydemo_1.name);
-console.log(myArraydemo_2.name);   // doubt
+console.log(myArraydemo_2.name);   // nishi bcoz of shallow copy 
 
 
 const myArrayA= [1,2,3,4,5]
@@ -55,7 +55,7 @@ console.log(myArrayA.includes(9))
 console.log(myArrayA.indexOf(9)) // result is -1 which indicates that the value is not present
 
 
-const newArr = myArrayA.join()
+const newArr = myArrayA.join()  // return string type.
 console.log(myArrayA);
 console.log(newArr);
 console.log(typeof newArr) // type of newArr is string bcoz of ".join" it binds it and converts it into string
@@ -65,12 +65,12 @@ console.log(typeof newArr) // type of newArr is string bcoz of ".join" it binds 
 // slice, splice //
 console.log(myArrayA)
 
-const myn1 = myArrayA.slice(1,4)
+const myn1 = myArrayA.slice(1,4)  // [2,3,4]
 console.log(myn1);
 
-const myn2 = myArrayA.splice(1,4)
+const myn2 = myArrayA.splice(1,3)    // [2,3,4,]
 console.log(myn2);
-console.log(myArrayA);  // splice manupulates the orignal array
+console.log(myArrayA);  // [1,5],splice manupulates the orignal array
 
 
 
