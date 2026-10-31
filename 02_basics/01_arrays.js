@@ -31,6 +31,7 @@ console.log(myArraydemo_2.name);   // nishi bcoz of shallow copy
 
 
 const myArrayA= [1,2,3,4,5]
+myArrayA[0] = 2;
 const mycartoons = ["doremon","shinchan","ninjahatori"]
 const myarrayB = new Array(0,1,2,3)
 console.log(myArrayA[0]);
