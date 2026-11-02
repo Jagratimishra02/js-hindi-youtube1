@@ -16,8 +16,15 @@ function m(){
 // },1*1000);
 
 // timer created
-for(let i = 0 ; i <= 10 ;i++){
+// for(let i = 0 ; i <= 10 ;i++){   
+//     setTimeout(function (){
+//         console.log(i);
+//     },i*1000);
+// }
+
+// 10 to 1 counter
+for(let i = 10 ; i >= 1 ;i--){   
     setTimeout(function (){
-        console.log(i);
-    },i*1000);
+        console.log(11-i);     
+    },i*500);
 }
