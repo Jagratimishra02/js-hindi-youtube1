@@ -6,3 +6,11 @@ function m(){
 }
 setTimeout(h,3*1000);  
 setTimeout(m,1*1000);
+
+
+setTimeout(function (){
+    console.log("hii");
+},3*1000);  
+setTimeout(function (){
+    console.log("hey");
+},1*1000);
